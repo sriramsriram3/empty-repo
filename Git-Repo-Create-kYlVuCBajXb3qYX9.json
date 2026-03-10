@@ -1,0 +1,66 @@
+[
+  {
+    "updatedAt": "2026-03-10T06:24:28.411Z",
+    "createdAt": "2026-03-10T06:21:45.343Z",
+    "id": "kYlVuCBajXb3qYX9",
+    "name": "Git-Repo-Create",
+    "description": null,
+    "active": false,
+    "isArchived": false,
+    "nodes": [
+      {
+        "parameters": {},
+        "type": "n8n-nodes-base.manualTrigger",
+        "typeVersion": 1,
+        "position": [
+          0,
+          0
+        ],
+        "id": "74e6ad7b-b42c-4cd0-a7d4-2e83b650ea69",
+        "name": "When clicking ‘Execute workflow’"
+      }
+    ],
+    "connections": {
+      "When clicking ‘Execute workflow’": {
+        "main": [
+          []
+        ]
+      }
+    },
+    "settings": {
+      "executionOrder": "v1",
+      "binaryMode": "separate",
+      "availableInMCP": false
+    },
+    "staticData": null,
+    "meta": {
+      "templateCredsSetupCompleted": true
+    },
+    "pinData": {},
+    "versionId": "4b1cd937-5d72-45a9-9612-3d4b7ae85aa0",
+    "activeVersionId": null,
+    "versionCounter": 5,
+    "triggerCount": 0,
+    "shared": [
+      {
+        "updatedAt": "2026-03-10T06:21:45.347Z",
+        "createdAt": "2026-03-10T06:21:45.347Z",
+        "role": "workflow:owner",
+        "workflowId": "kYlVuCBajXb3qYX9",
+        "projectId": "RhkVrCSh22PbPDk6",
+        "project": {
+          "updatedAt": "2025-12-24T10:55:16.110Z",
+          "createdAt": "2025-12-24T10:54:18.883Z",
+          "id": "RhkVrCSh22PbPDk6",
+          "name": "sriram simhadri <simhadrisriram3@gmail.com>",
+          "type": "personal",
+          "icon": null,
+          "description": null,
+          "creatorId": "66c665e1-d2a1-4529-addf-d39ad85ea172"
+        }
+      }
+    ],
+    "tags": [],
+    "activeVersion": null
+  }
+]
