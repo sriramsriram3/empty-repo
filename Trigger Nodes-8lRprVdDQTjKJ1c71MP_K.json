@@ -1,0 +1,132 @@
+[
+  {
+    "updatedAt": "2026-02-11T05:49:28.219Z",
+    "createdAt": "2026-02-11T04:24:04.391Z",
+    "id": "8lRprVdDQTjKJ1c71MP_K",
+    "name": "Trigger Nodes",
+    "description": null,
+    "active": false,
+    "isArchived": false,
+    "nodes": [
+      {
+        "parameters": {},
+        "type": "n8n-nodes-base.manualTrigger",
+        "typeVersion": 1,
+        "position": [
+          -384,
+          -96
+        ],
+        "id": "9480fbc6-8e59-4d26-a7b1-8a51da69d30e",
+        "name": "When clicking ‘Execute workflow’"
+      },
+      {
+        "parameters": {
+          "rule": {
+            "interval": [
+              {}
+            ]
+          }
+        },
+        "type": "n8n-nodes-base.scheduleTrigger",
+        "typeVersion": 1.3,
+        "position": [
+          -352,
+          96
+        ],
+        "id": "1b8857a8-9c6e-48a2-ae56-06875caddcf3",
+        "name": "Schedule Trigger"
+      },
+      {
+        "parameters": {
+          "options": {}
+        },
+        "type": "n8n-nodes-base.formTrigger",
+        "typeVersion": 2.5,
+        "position": [
+          -352,
+          256
+        ],
+        "id": "d554c145-f37f-4f85-97b6-9bb9cd25bfac",
+        "name": "On form submission",
+        "webhookId": "8ab063fd-5b4a-4b95-aba8-c31b849f3c5f"
+      },
+      {
+        "parameters": {
+          "public": true,
+          "availableInChat": true,
+          "options": {}
+        },
+        "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+        "typeVersion": 1.4,
+        "position": [
+          -80,
+          16
+        ],
+        "id": "6b18278f-0a5d-4c03-a4dd-954d26f142fc",
+        "name": "When chat message received",
+        "webhookId": "f57ecdff-75fe-4b29-af7d-aa16b7c7c388"
+      },
+      {
+        "parameters": {
+          "path": "d93d7d74-b1b9-44bc-9071-917b4d1fd4dc",
+          "options": {}
+        },
+        "type": "n8n-nodes-base.webhook",
+        "typeVersion": 2.1,
+        "position": [
+          -48,
+          224
+        ],
+        "id": "7a8db6ae-f676-4842-bac1-953235e1c0d8",
+        "name": "Webhook",
+        "webhookId": "d93d7d74-b1b9-44bc-9071-917b4d1fd4dc"
+      },
+      {
+        "parameters": {
+          "options": {}
+        },
+        "type": "n8n-nodes-base.emailReadImap",
+        "typeVersion": 2.1,
+        "position": [
+          272,
+          112
+        ],
+        "id": "52cbbb2c-290d-475a-90f5-e7441066317c",
+        "name": "Email Trigger (IMAP)"
+      }
+    ],
+    "connections": {},
+    "settings": {
+      "executionOrder": "v1",
+      "availableInMCP": false
+    },
+    "staticData": null,
+    "meta": null,
+    "pinData": {},
+    "versionId": "f3c8150a-23b6-4d5f-a6f6-5ffb96bb86a5",
+    "activeVersionId": null,
+    "versionCounter": 25,
+    "triggerCount": 0,
+    "shared": [
+      {
+        "updatedAt": "2026-02-11T04:24:04.400Z",
+        "createdAt": "2026-02-11T04:24:04.400Z",
+        "role": "workflow:owner",
+        "workflowId": "8lRprVdDQTjKJ1c71MP_K",
+        "projectId": "RhkVrCSh22PbPDk6",
+        "project": {
+          "updatedAt": "2025-12-24T10:55:16.110Z",
+          "createdAt": "2025-12-24T10:54:18.883Z",
+          "id": "RhkVrCSh22PbPDk6",
+          "name": "sriram simhadri <simhadrisriram3@gmail.com>",
+          "type": "personal",
+          "icon": null,
+          "description": null,
+          "creatorId": "66c665e1-d2a1-4529-addf-d39ad85ea172"
+        }
+      }
+    ],
+    "tags": [],
+    "activeVersion": null
+  }
+]
