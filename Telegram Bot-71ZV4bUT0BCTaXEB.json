@@ -1,0 +1,110 @@
+[
+  {
+    "updatedAt": "2026-01-28T10:43:29.435Z",
+    "createdAt": "2026-01-23T06:40:43.827Z",
+    "id": "71ZV4bUT0BCTaXEB",
+    "name": "Telegram Bot",
+    "description": null,
+    "active": false,
+    "isArchived": false,
+    "nodes": [
+      {
+        "parameters": {
+          "chatId": "=1413456443",
+          "text": "Hii Sriram",
+          "additionalFields": {
+            "appendAttribution": false,
+            "disable_notification": false
+          }
+        },
+        "type": "n8n-nodes-base.telegram",
+        "typeVersion": 1.2,
+        "position": [
+          -128,
+          160
+        ],
+        "id": "99288f2f-d689-4824-b7ca-09ba9945d65f",
+        "name": "Send a text message1",
+        "webhookId": "58ecd412-3381-42fe-943d-ac0f42b167ca",
+        "credentials": {
+          "telegramApi": {
+            "id": "p0OvXup70i33i1dC",
+            "name": "Telegram account"
+          }
+        }
+      },
+      {
+        "parameters": {
+          "updates": [
+            "message"
+          ],
+          "additionalFields": {}
+        },
+        "type": "n8n-nodes-base.telegramTrigger",
+        "typeVersion": 1.2,
+        "position": [
+          -384,
+          160
+        ],
+        "id": "50ed6865-6c7b-43df-8373-3622dc292149",
+        "name": "Telegram Trigger",
+        "webhookId": "85ca9e5b-7b75-4506-b37d-4ef051c5896d",
+        "credentials": {
+          "telegramApi": {
+            "id": "Z9cFlMjx1Ts7Tnz0",
+            "name": "clawdbot telegram"
+          }
+        }
+      }
+    ],
+    "connections": {
+      "Telegram Trigger": {
+        "main": [
+          [
+            {
+              "node": "Send a text message1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "settings": {
+      "executionOrder": "v1",
+      "availableInMCP": false,
+      "timeSavedMode": "fixed",
+      "callerPolicy": "workflowsFromSameOwner"
+    },
+    "staticData": null,
+    "meta": {
+      "templateCredsSetupCompleted": true
+    },
+    "pinData": {},
+    "versionId": "f5642340-af36-4ed2-9c1f-827350c978ba",
+    "activeVersionId": null,
+    "versionCounter": 98,
+    "triggerCount": 1,
+    "shared": [
+      {
+        "updatedAt": "2026-01-23T06:40:43.831Z",
+        "createdAt": "2026-01-23T06:40:43.831Z",
+        "role": "workflow:owner",
+        "workflowId": "71ZV4bUT0BCTaXEB",
+        "projectId": "RhkVrCSh22PbPDk6",
+        "project": {
+          "updatedAt": "2025-12-24T10:55:16.110Z",
+          "createdAt": "2025-12-24T10:54:18.883Z",
+          "id": "RhkVrCSh22PbPDk6",
+          "name": "sriram simhadri <simhadrisriram3@gmail.com>",
+          "type": "personal",
+          "icon": null,
+          "description": null,
+          "creatorId": "66c665e1-d2a1-4529-addf-d39ad85ea172"
+        }
+      }
+    ],
+    "tags": [],
+    "activeVersion": null
+  }
+]
